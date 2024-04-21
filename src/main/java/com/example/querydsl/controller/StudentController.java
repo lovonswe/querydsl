@@ -18,6 +18,7 @@ public class StudentController {
 
     @GetMapping
     public List<StudentDetailsDto> getStudentDetails() {
+        int number=9;
         return studentService.getStudentDetails();
     }
 }

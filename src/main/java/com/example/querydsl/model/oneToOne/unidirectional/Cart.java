@@ -28,6 +28,6 @@ public class Cart {
     @GeneratedValue
     private Long id;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "cart_id")
     private List<GProduct> products;
 }

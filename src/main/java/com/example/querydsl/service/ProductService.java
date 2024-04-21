@@ -4,6 +4,8 @@ import com.example.querydsl.model.Product;
 import com.example.querydsl.model.QProduct;
 import com.example.querydsl.repository.ProductRepository;
 import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.QueryFactory;
+import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

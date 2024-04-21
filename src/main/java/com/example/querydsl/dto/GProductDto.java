@@ -1,5 +1,6 @@
 package com.example.querydsl.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,8 @@ public class GProductDto {
     private Long price;
     private int discount;
     private int addedInCart;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date productionDate;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date expiaryDate;
 }
